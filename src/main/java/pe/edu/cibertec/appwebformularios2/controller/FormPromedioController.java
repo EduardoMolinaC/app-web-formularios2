@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class FormPromedioController {
 
     @GetMapping
-    public String formpromedio(Model model){
+    public String index(Model model){
 
         return "formpromedio";
     }
