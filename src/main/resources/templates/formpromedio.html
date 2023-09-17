@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link th:href="@{/style/bootsrap/bootstrap.css}" rel="stylesheet">
+    <script th:src="@{/scripts/bootstrap/bootstrap-bundle.js}"
+            type="text/javascript"></script>
+</head>
+<body>
+<div class="card">
+    <div class="card-header">
+        Cálculo de promedio - Cibertec
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="txtcl1" placeholder="name@example.com">
+                <label for="txtcl1">INGRESE NOTA DE CL1</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="txtcl2" placeholder="name@example.com">
+                <label for="txtcl2">INGRESE NOTA DE CL2</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="txtcl3" placeholder="name@example.com">
+                <label for="txtcl3">INGRESE NOTA DE CL3</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="txtpf" placeholder="name@example.com">
+                <label for="txtpf">INGRESE NOTA DE PROYECTOFINAL</label>
+            </div>
+            <button type="submit" class="btn btn-dark">Calcular Promedio</button>
+<hr/>
+            <div class="alert alert-dark" role="alert">
+                Calculando
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
