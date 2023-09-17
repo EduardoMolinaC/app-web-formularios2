@@ -28,7 +28,7 @@ public class ForImcController {
     ) {
         Double promedio = (promedioModel.getCl1()*0.15)+
                 (promedioModel.getCl2()*0.2)+
-                (promedioModel.getCl3()*0.35)+
+                (promedioModel.getCl3()*0.35)+  
                 (promedioModel.getPf()*0.3);
         String condicion = (promedio < 10.5) ? "Aprobado" : "Desaprobado";
 
