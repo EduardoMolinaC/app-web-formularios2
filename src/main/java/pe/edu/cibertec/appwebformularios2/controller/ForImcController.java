@@ -29,8 +29,7 @@ public class ForImcController {
                 (promedioModel.getCl2()*0.2)+
                 (promedioModel.getCl3()*0.35)+  
                 (promedioModel.getPf()*0.3);
-        String condicion = (promedio <= 13) ? "Aprobado" : "Desaprobado" ;
-
+        String condicion = (promedio >= 13)? "Aprobado" : "Desaprobado" ;
         model.addAttribute("resultado", " El promedio de notas es:   " + promedio + "usted se encuentra:" + condicion);
 model.addAttribute("verresultado", true);
 model.addAttribute("promediomodel", new PromedioModel());
